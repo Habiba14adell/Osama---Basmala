@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding invitation for Osama and Basmala.">
+  <title>Osama &amp; Basmala | Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Naskh+Arabic:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/invitation.css">
+</head>
+<body>
+  <audio class="wedding-audio" src="music.mp3" preload="auto" loop></audio>
+  <button class="music-toggle" type="button" hidden aria-pressed="false">Play Music</button>
+  <button class="language-toggle" type="button" aria-label="Switch language" data-language-toggle>AR</button>
+
+  <main>
+    <section class="invite-hero" aria-labelledby="invite-title">
+      <h1 id="invite-title" class="sr-only" data-en="Wedding invitation for Osama and Basmala" data-ar="دعوة زفاف أسامة وبسملة">Wedding invitation for Osama and Basmala</h1>
+
+      <picture>
+        <source media="(min-width: 768px)" srcset="bg.png">
+        <img class="hero-bg" src="bg.png" alt="Soft watercolor paper background">
+      </picture>
+
+      <div class="hero-art" aria-label="Wedding venue and invitation artwork">
+        <picture>
+          <source media="(min-width: 768px)" srcset="shape.png">
+          <img class="venue-art" src="shape.png" alt="Watercolor wedding venue with flowers and tall greenery">
+        </picture>
+
+        <picture>
+          <source media="(min-width: 768px)" srcset="env.png">
+          <img class="envelope-art" src="env.png" alt="Envelope containing the wedding invitation for Osama and Basmala">
+        </picture>
+      </div>
+    </section>
+
+    <section class="save-date-section" aria-labelledby="save-date-title">
+      <div class="save-date-content">
+        <p class="section-kicker" data-en="Save the Date" data-ar="احفظوا التاريخ">Save the Date</p>
+        <h2 id="save-date-title" data-en="July 23, 2026" data-ar="٢٣ يوليو ٢٠٢٦">July 23, 2026</h2>
+        <p class="event-time" data-en="6:00 PM" data-ar="٦:٠٠ مساءً">6:00 PM</p>
+
+        <div class="countdown" data-countdown="2026-07-23T18:00:00" aria-label="Countdown to wedding date">
+          <div class="countdown-item">
+            <span class="countdown-number" data-days>00</span>
+            <span class="countdown-label" data-en="Days" data-ar="أيام">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" data-hours>00</span>
+            <span class="countdown-label" data-en="Hours" data-ar="ساعات">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" data-minutes>00</span>
+            <span class="countdown-label" data-en="Minutes" data-ar="دقائق">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" data-seconds>00</span>
+            <span class="countdown-label" data-en="Seconds" data-ar="ثواني">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section" aria-labelledby="location-title">
+      <div class="location-content">
+        <h2 id="location-title" data-en="Where Forever Begins" data-ar="حيث يبدأ الأبد">Where Forever Begins</h2>
+        <p class="location-address">
+          <span data-en="SWISS IN PYRAMIDS GOLF RESORT" data-ar="منتجع سويس إن بيراميدز جولف">SWISS IN PYRAMIDS GOLF RESORT</span>
+          <span data-en="6th of October" data-ar="٦ أكتوبر">6th of October</span>
+        </p>
+        <a class="map-button" href="https://maps.app.goo.gl/HbmF7gT4mWUfYCKc6" target="_blank" rel="noopener noreferrer" data-en="Location" data-ar="الموقع">
+          Location
+        </a>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title">
+      <div class="closing-content">
+        <div class="closing-message">
+          <h2 id="closing-title" data-en="As our story continues, we'd be honored to have you by our side." data-ar="ومع استمرار حكايتنا، يشرفنا أن تكونوا بجانبنا.">As our story continues, we'd be honored to have you by our side.</h2>
+          <p data-en="We look forward to celebrating with you." data-ar="نتطلع للاحتفال معكم.">We look forward to celebrating with you.</p>
+        </div>
+
+        <img class="couple-image" src="OB.png" alt="Illustration of Osama and Basmala seated together">
+      </div>
+    </section>
+  </main>
+  <script src="js/invitation.js" defer></script>
+</body>
+</html>

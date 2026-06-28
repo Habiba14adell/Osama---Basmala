@@ -1,0 +1,98 @@
+:root {
+  --paper: #f8f2ea;
+  --ink: #5a4b42;
+  --muted: rgba(90, 75, 66, .76);
+  --gold: #c7a15a;
+  --gold-deep: #b28a43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+.entrance {
+  position: relative;
+  display: grid;
+  width: 100%;
+  min-height: 100svh;
+  place-items: center;
+  overflow: hidden;
+  padding: 28px 18px;
+  border: 0;
+  background: var(--paper);
+  color: inherit;
+  cursor: pointer;
+  isolation: isolate;
+}
+
+.entrance-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.entrance::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  background: rgba(248, 242, 234, .18);
+  pointer-events: none;
+}
+
+.entrance-content {
+  display: grid;
+  width: min(86vw, 430px);
+  justify-items: center;
+  gap: 18px;
+}
+
+.entrance-envelope {
+  display: block;
+  width: 100%;
+  max-height: 70svh;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 34px rgba(70, 55, 40, .18));
+  pointer-events: none;
+}
+
+.entrance-text {
+  max-width: 18rem;
+  color: var(--muted);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.entrance:focus-visible {
+  outline: 2px solid var(--gold-deep);
+  outline-offset: -10px;
+}
+
+@media (min-width: 768px) {
+  .entrance-content {
+    width: min(42vw, 470px);
+  }
+}
